@@ -3,7 +3,32 @@
 		<div class="card">
 			<h5 class="card-header mb-3">Dashboard Utama</h5>
 			<div class="p-3">
-            </div>
+            
+
+			<?php 
+			$tiga = 'Fizz';
+			$lima = 'Buzz';
+			for ($i=1; $i < 100 ; $i++) { 
+				if ($i%3 == 0 AND $i%5 == 0) {
+					 echo $i; 
+					 echo ':';  
+					 echo $tiga; 
+					 echo $lima; 
+					 echo '<br>';
+				} elseif ($i%3 == 0) {
+					echo $i; 
+					echo ':'; 
+					echo $tiga; 
+					echo '<br>';
+				} elseif ($i%5 == 0){
+					echo $i; 
+					echo ':'; 
+					echo $lima; 
+					echo '<br>';
+				}
+			}
+			?>
+			</div>
 
 			
      	</div>
